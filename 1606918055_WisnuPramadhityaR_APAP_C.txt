@@ -1,0 +1,35 @@
+1. Apa tujuan dari perintah git fork ​dan git merge​?
+2. Apakah git clone​ itu?
+3. Apakah perbedaan git fetch​ dengan git pull​?
+4. Apakah merge conflict dalam konteks Git? Bagaimana menyelesaikannya?
+
+Jawaban
+github username: wisnuprama-ui
+url repo: https://github.com/wisnuprama-ui/Tutorial1
+
+1. tujuan dari fork dan merge
+- git fork:
+tujuan git fork adalah untuk membuat repository baru berdasarkan repository yang ada
+sehingga kita dapat melanjutkan development nya tanpa harus dependent ke repository lama
+- git merge
+tujuannya adalah menggabungkan perubahan di suatu branch ke branch yang sedang kita tuju sehingga
+perubahan baru tsb terimplementasikan di branch yang sedang dituju.
+
+2. git clone ada sebuah command yang digunakan untuk meng-copy (clone) repository yang sudah ada
+yang ada di suatu lokasi ke lokasi yang lain, misalnya remote ke local.
+
+3.
+- git fetch:
+git fetch digunakan untuk mendownload status, objects, dan refs dari repository yang ada di remote ke local
+- git pull:
+git pull tujuannya adalah untuk fetch sekaligus mengambil commit dan file perubahan yang ada di remote
+ke repository local lalu mengitegrasikannya.
+
+4. merge conflicts dalam git memiliki konteks dimana jika git tidak dapat memilih perubahan
+yang seharusnya diambil sehingga akan menandai perubahan tersebut dan meminta kita untuk
+memilih mana perubahan yang tepat. Conflicts biasa terjadi ketika dua orang melakukan
+perubahan pada line yang sama sehingga orang yang terkena conflicts harus memilih.
+
+Untuk resolve conflicts biasanya kita akan memilih antara current changes dan incoming change. Tentu untuk
+memilih kita perlu memahami konteks perubahan pada kode yang ada. Ada baiknya kita mereview
+perubahan kode terlebih dahulu bersama yang membuat perubahan.
